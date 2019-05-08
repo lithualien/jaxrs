@@ -1,10 +1,6 @@
 package com.github.lithualien.bike;
 
-import com.github.lithualien.shop.Shop;
-
 import java.text.NumberFormat;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Class to define all the attributes about the bike.
@@ -14,11 +10,10 @@ import java.util.List;
 public class Bike {
 
     // variables
-    private String brand, type, colour, address, number;
+    private String brand, type, colour;
     private double weight;
     private float price;
     private int wheelSize, gears, ID;
-    private List<Shop> shops = new ArrayList<>();
 
     /**
      * Class constructor
@@ -38,7 +33,8 @@ public class Bike {
      * @param wheelSize the size of the wheel in inches.
      * @param price the price of the bike.
      */
-    public Bike(int ID, String brand, String type, String colour, double weight, int gears, int wheelSize, float price, Shop shop) {
+
+    public Bike(int ID, String brand, String type, String colour, double weight, int gears, int wheelSize, float price) {
         this.ID = ID;
         this.brand = brand;
         this.type = type;
@@ -47,13 +43,10 @@ public class Bike {
         this.gears = gears;
         this.wheelSize = wheelSize;
         this.price = price;
-        this.address = address;
-        this.number = number;
-        shops.add(shop);
     }
 
     /**
-     * Set the id of the bike.
+     * Method to set the id of the bike.
      * @param ID the id of the bike.
      */
 
@@ -62,7 +55,7 @@ public class Bike {
     }
 
     /**
-     * Set the brand of the bike.
+     * Method to set the brand of the bike.
      * @param brand the brand of the bike.
      */
 
@@ -71,7 +64,7 @@ public class Bike {
     }
 
     /**
-     * Set the type of the bike.
+     * Method to set the type of the bike.
      * @param type the type of the bike.
      */
 
@@ -80,7 +73,7 @@ public class Bike {
     }
 
     /**
-     * Set the colour of the bike.
+     * Method to set the colour of the bike.
      * @param colour the colour of the bike.
      */
 
@@ -89,7 +82,7 @@ public class Bike {
     }
 
     /**
-     * Set the weight of the bike.
+     * Method to set the weight of the bike.
      * @param weight the weight of the bike.
      */
 
@@ -98,7 +91,7 @@ public class Bike {
     }
 
     /**
-     * Set the amount of gears of the bike.
+     * Method to set the amount of gears of the bike.
      * @param gears the amount of gears the bike has.
      */
 
@@ -107,7 +100,7 @@ public class Bike {
     }
 
     /**
-     * Set the size of the wheel.
+     * Method to set the size of the wheel.
      * @param wheelSize the wheel size of the bike.
      */
 
@@ -116,7 +109,7 @@ public class Bike {
     }
 
     /**
-     * Set the price of the bike.
+     * Method to set the price of the bike.
      * @param price the value of the bike in Euro.
      */
 
@@ -125,6 +118,7 @@ public class Bike {
     }
 
     /**
+     * Method to get the ID of the bike.
      * @return Returns the ID.
      */
 
@@ -133,6 +127,7 @@ public class Bike {
     }
 
     /**
+     * Method to get the brand of the bike.
      * @return Returns the value of the brand.
      */
 
@@ -141,6 +136,7 @@ public class Bike {
     }
 
     /**
+     * Method to get the type of the bike.
      * @return Returns the value of the bike type.
      */
 
@@ -149,6 +145,7 @@ public class Bike {
     }
 
     /**
+     * Method to get the colour of the bike.
      * @return Returns the colour of the bike.
      */
 
@@ -157,6 +154,7 @@ public class Bike {
     }
 
     /**
+     * Method to get the weight of the bike.
      * @return Returns the weight of the bike.
      */
 
@@ -165,6 +163,7 @@ public class Bike {
     }
 
     /**
+     * Method to get the amount of gears the bike has.
      * @return Returns the amount of gears the bike has.
      */
 
@@ -173,6 +172,7 @@ public class Bike {
     }
 
     /**
+     * Method to get the wheel size of the bike.
      * @return Returns the wheel size of the bike in inches
      */
 
@@ -181,6 +181,7 @@ public class Bike {
     }
 
     /**
+     * Method to get the price of the bike.
      * @return Returns the price.
      */
 
@@ -189,28 +190,11 @@ public class Bike {
     }
 
     /**
-     * Set the information about the shop.
-     * @param address the address of the shop.
-     * @param number the number of the shop.
-     */
-
-    public void setShop(List<Shop> shops) {
-        this.shops = shops;
-    }
-
-    /**
-     * @return returns the information about the shop.
-     */
-
-    public List<Shop> getShop() {
-        return shops;
-    }
-
-    /**
+     * Method to get the information about the bike.
      * @return Returns all the data about the bike to a single String variable.
      */
     public String toString() {
         NumberFormat format = NumberFormat.getCurrencyInstance();
-        return ID + ". Gamintojas: " + brand + " | Rūšis: " + type + " | Svoris: " + weight + "kg | Spalva: " + colour + " | Pavarų kiekis: " + gears + " | Rato dydis: " + wheelSize + " inch. | Kaina: " + format.format(price) + " | Adresas: " + getShop().get(0).getAddress() + " | Telefonas: " + getShop().get(0).getNumber() + "\n";
+        return ID + ". Gamintojas: " + brand + " | Rūšis: " + type + " | Svoris: " + weight + "kg | Spalva: " + colour + " | Pavarų kiekis: " + gears + " | Rato dydis: " + wheelSize + " inch. | Kaina: " + format.format(price) +"\n";
     }
 }
