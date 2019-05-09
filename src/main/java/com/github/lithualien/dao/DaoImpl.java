@@ -32,7 +32,7 @@ public class DaoImpl implements Dao {
         Bike bike2 = new Bike(2, "Baltic Wheel", "mountain", "red", 14.35, 21, 8, 989.99f);
         Bike bike3 = new Bike(3, "Baltic Wheel", "mountain", "blue", 14.35, 20, 9, 800.00f);
         Bike bike4 = new Bike(4, "Baltic Wheel", "mountain", "white", 14.35, 18, 7, 699.99f);
-        Bike bike5 = new Bike(5, "Baltic Wheel", "electric", "yellow", 14.35, 20, 7, 696.29f);
+        Bike bike5 = new Bike(5, "Baltic Wheel", "electric", "blue", 14.35, 20, 7, 696.29f);
 
         shops.add(shop);
         shops.add(shop1);
@@ -91,47 +91,13 @@ public class DaoImpl implements Dao {
      * @return Returns the Bike object list.
      */
 
-    public List<Bike> getBikesByColour(String colour){
+    public List<Bike> getBikesByColourAndType(String colour, String type){
         List<Bike> temp = new ArrayList<>();
         for (Bike bike : bikes) {
-            if (colour.equals(bike.getColour())) {
+            if (colour.equals(bike.getColour()) && type.equals(bike.getType())) {
                 temp.add(bike);
             }
         }
         return temp;
     }
-
-    /**
-     * Method to return Bike object list by selected type.
-     * @param type the type of the bike
-     * @return Returns the Bike object list.
-     */
-/*
-    public List<Bike> getBikesByType(String type) {
-        List<Bike> temp = new ArrayList<>();
-        for (Bike bike : bikes) {
-            if (type.equals(bike.getType())) {
-                temp.add(bike);
-            }
-        }
-        return temp;
-    }
-*/
-    /**
-     * Method to return Bike object list by selected type and colour.
-     * @param type the type of the bike.
-     * @param colour the colour of the bike
-     * @return Returns the Bike object list.
-     */
-/*
-    public List<Bike> getBikesByTypeAndColour(String type, String colour) {
-        List<Bike> temp = new ArrayList<>();
-        for (Bike bike : bikes) {
-            if (type.equals(bike.getType()) && colour.equals(bike.getColour())) {
-                temp.add(bike);
-            }
-        }
-        return temp;
-    }
-*/
 }

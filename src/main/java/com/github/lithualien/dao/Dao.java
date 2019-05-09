@@ -47,22 +47,6 @@ public interface Dao {
      * @return Returns the Bike object list.
      */
 
-    List<Bike> getBikesByColour(String colour);
+    List<Bike> getBikesByColourAndType(String colour, String type);
 
-    /**
-     * Method to return Bike object list by selected type.
-     * @param type the type of the bike
-     * @return Returns the Bike object list.
-     */
-
-    //List<Bike> getBikesByType(String type);
-
-    /**
-     * Method to return Bike object list by selected type and colour.
-     * @param type tje type of the bike.
-     * @param colour the colour of the bike
-     * @return Returns the Bike object list.
-     */
-
-    //List<Bike> getBikesByTypeAndColour(String type, String colour);
 }

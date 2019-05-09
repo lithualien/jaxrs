@@ -31,29 +31,11 @@ public class BikeService {
     @GET
     @Path("/list")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getBikesByColour(@MatrixParam("colour") String colour) {
+    public Response getBikesByColour(@MatrixParam("colour") String colour,
+                                     @MatrixParam("type") String type) {
         return Response.ok()
-                .entity(dao.getBikesByColour(colour))
+                .entity(dao.getBikesByColourAndType(colour, type))
                 .build();
     }
 
-    /*@GET
-    @Path("/list")
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response getBikesByType(@MatrixParam("type") String type) {
-        return Response.ok()
-                .entity(dao.getBikesByType(type))
-                .build();
-    }*/
-/*
-    @GET
-    @Path("/list")
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response getBikesByTypeAndColour(@MatrixParam("type") String type,
-                                   @MatrixParam("colour") String colour) {
-        return Response.ok()
-                .entity(dao.getBikesByTypeAndColour(type, colour))
-                .build();
-    }
-*/
 }
