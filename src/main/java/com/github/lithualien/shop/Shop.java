@@ -2,9 +2,6 @@ package com.github.lithualien.shop;
 
 import com.github.lithualien.bike.Bike;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * Class to define information about the shop.
  */
@@ -12,7 +9,6 @@ import java.util.List;
 public class Shop {
     private int ID;
     private String name, address, number;
-    private List<Bike> bikes = new ArrayList<>();
 
     /**
      * Class constructor.
@@ -37,30 +33,12 @@ public class Shop {
     }
 
     /**
-     * Method to set the information about the bike.
-     * @param bikes Bike class list, which contains all the information about the bike.
-     */
-
-    public void setBikes(List<Bike> bikes) {
-        this.bikes = bikes;
-    }
-
-    /**
      * Method to set the name of the shop.
      * @param name the name of the shop.
      */
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    /**
-     * Method to add new bike to the list.
-     * @param bike Bike class object, which contains all the information about the bike.
-     */
-
-    public void addBike(Bike bike) {
-        this.bikes.add(bike);
     }
 
     /**
@@ -124,15 +102,6 @@ public class Shop {
 
     public String getAddress() {
         return address;
-    }
-
-    /**
-     * Method to get the information about the bike.
-     * @return Returns Bike object list.
-     */
-
-    public List<Bike> getBikes() {
-        return bikes;
     }
 
     /**

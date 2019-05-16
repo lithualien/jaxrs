@@ -13,14 +13,14 @@ public interface Dao {
 
     /**
      * Method to get all bike.
-     * @return the list of all bike.
+     * @return the Bike object list of all bike.
      */
 
     List<Bike> getBikes();
 
     /**
      * Method to get all shops.
-     * @return Returns the Shop object list.
+     * @return the Shop object list of all shops.
      */
 
     List<Shop> getShops();
@@ -28,25 +28,58 @@ public interface Dao {
     /**
      * Method to get information about the selected shop.
      * @param id the id of the shop.
-     * @return Returns the Shop object.
+     * @return the Shop object to get the specific
      */
 
-    Bike getBike(int id);
+    List<Bike> getBike(int id);
 
     /**
      * Method to get information about the selected shop.
      * @param id the id of the shop.
-     * @return Returns the Shop object.
+     * @return the Shop object.
      */
 
-    Shop getShop(int id);
+    List<Shop> getShop(int id);
 
     /**
-     * Method to return Bike object list by selected colour.
-     * @param colour the colour of the bike
-     * @return Returns the Bike object list.
+     * Method to return Bike object list by selected attributes.
+     * @param colour the colour of the bike.
+     * @param type the type of the bike.
+     * @return the Bike object list of selected attributes.
      */
 
     List<Bike> getBikesByColourAndType(String colour, String type);
+
+    /**
+     * Method to return the Bike object of added bike.
+     * @param bike the Bike object.
+     * @return the Bike object of added bike.
+     */
+
+    Bike addBike(Bike bike);
+
+    /**
+     * Method to add a new shop.
+     * @param shop Shop class object.
+     * @return the information about the new shop.
+     */
+
+    Shop addShop(Shop shop);
+
+    /**
+     * Method to delete the selected shop.
+     * @param id the id of the shop.
+     * @return true or false, depending on success of the operation.
+     */
+
+    boolean deleteShop(int id);
+
+    /**
+     * Method to delete the selected bike.
+     * @param id the id of the bike.
+     * @return true or false, depending on success of the operation.
+     */
+
+    boolean deleteBike(int id);
 
 }

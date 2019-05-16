@@ -11,9 +11,9 @@ public class Bike {
 
     // variables
     private String brand, type, colour;
-    private double weight;
+    private double weight, wheelSize;
     private float price;
-    private int wheelSize, gears, ID;
+    private int gears, ID, shopID;
 
     /**
      * Class constructor
@@ -34,7 +34,7 @@ public class Bike {
      * @param price the price of the bike.
      */
 
-    public Bike(int ID, String brand, String type, String colour, double weight, int gears, int wheelSize, float price) {
+    public Bike(int ID, String brand, String type, String colour, double weight, int gears, double wheelSize, float price, int shopID) {
         this.ID = ID;
         this.brand = brand;
         this.type = type;
@@ -43,6 +43,7 @@ public class Bike {
         this.gears = gears;
         this.wheelSize = wheelSize;
         this.price = price;
+        this.shopID = shopID;
     }
 
     /**
@@ -104,7 +105,7 @@ public class Bike {
      * @param wheelSize the wheel size of the bike.
      */
 
-    public void setWheelSize(int wheelSize) {
+    public void setWheelSize(double wheelSize) {
         this.wheelSize = wheelSize;
     }
 
@@ -118,8 +119,17 @@ public class Bike {
     }
 
     /**
+     * Method to set the id of the shop.
+     * @param shopID the id of the shop.
+     */
+
+    public void setShopID(int shopID) {
+        this.shopID = shopID;
+    }
+
+    /**
      * Method to get the ID of the bike.
-     * @return Returns the ID.
+     * @return the value of the ID.
      */
 
     public int getID() {
@@ -128,7 +138,7 @@ public class Bike {
 
     /**
      * Method to get the brand of the bike.
-     * @return Returns the value of the brand.
+     * @return the value of the brand.
      */
 
     public String getBrand() {
@@ -137,7 +147,7 @@ public class Bike {
 
     /**
      * Method to get the type of the bike.
-     * @return Returns the value of the bike type.
+     * @return the value of the bike type.
      */
 
     public String getType() {
@@ -146,7 +156,7 @@ public class Bike {
 
     /**
      * Method to get the colour of the bike.
-     * @return Returns the colour of the bike.
+     * @return the colour of the bike.
      */
 
     public String getColour() {
@@ -155,7 +165,7 @@ public class Bike {
 
     /**
      * Method to get the weight of the bike.
-     * @return Returns the weight of the bike.
+     * @return the weight of the bike.
      */
 
     public double getWeight() {
@@ -164,7 +174,7 @@ public class Bike {
 
     /**
      * Method to get the amount of gears the bike has.
-     * @return Returns the amount of gears the bike has.
+     * @return the amount of gears the bike has.
      */
 
     public int getGears() {
@@ -173,20 +183,29 @@ public class Bike {
 
     /**
      * Method to get the wheel size of the bike.
-     * @return Returns the wheel size of the bike in inches
+     * @return the wheel size of the bike in inches
      */
 
-    public int getWheelSize() {
+    public double getWheelSize() {
         return wheelSize;
     }
 
     /**
      * Method to get the price of the bike.
-     * @return Returns the price.
+     * @return the price of the bike.
      */
 
     public float getPrice() {
         return price;
+    }
+
+    /**
+     * Method to get the id of the shop.
+     * @return the id of the shop.
+     */
+
+    public int getShopID() {
+        return shopID;
     }
 
     /**
