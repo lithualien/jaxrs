@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="jaxrs:war" />
+      <artifact name="jax-rs:war" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="511693f8-84fe-495d-827b-92764f82c222" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/lithualien/DaoImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lithualien/bike/Bike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lithualien/bike/Bike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/Dao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/DaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/DaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lithualien/shop/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lithualien/shop/Shop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lithualien/ws/BikeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lithualien/ws/BikeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lithualien/ws/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lithualien/ws/ShopService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jax-rs/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/jax-rs/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jax-rs/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/jax-rs/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,11 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/ws/BikeService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="425">
+              <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -59,33 +55,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/bike/Bike.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="36" column="79" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="79" />
-              <folding>
-                <element signature="e#2867#2868#0" expanded="true" />
-                <element signature="e#2903#2904#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/DaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-138">
-              <caret line="245" lean-forward="true" selection-start-line="245" selection-end-line="245" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="612">
+              <caret line="36" column="79" selection-start-line="36" selection-start-column="79" selection-end-line="36" selection-end-column="79" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/shop/Shop.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/DaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="114" column="1" lean-forward="true" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
+            <state relative-caret-position="3536">
+              <caret line="217" selection-start-line="217" selection-end-line="217" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -93,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/Dao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="76" column="7" lean-forward="true" selection-start-line="76" selection-start-column="7" selection-end-line="76" selection-end-column="7" />
+            <state relative-caret-position="1394">
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
             </state>
           </provider>
         </entry>
@@ -102,12 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/ws/ShopService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="55" column="43" lean-forward="true" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getBikesByColour#0;class#ShopService#0" />
-              </folding>
+            <state relative-caret-position="816">
+              <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -141,7 +126,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/BikeDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/BikeDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/lithualien/dao/DaoImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/lithualien/ws/BikeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/lithualien/bike/Bike.java" />
@@ -151,6 +135,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/Dao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/DaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/lithualien/ws/ShopService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -184,11 +169,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="349" />
-    <option name="y" value="60" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="176" />
+    <option name="y" value="2" />
     <option name="width" value="1319" />
-    <option name="height" value="927" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -262,6 +247,21 @@
               <item name="jaxrs" type="b2602c69:ProjectViewProjectNode" />
               <item name="jaxrs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jaxrs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jaxrs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jaxrs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jaxrs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -274,14 +274,22 @@
             <path>
               <item name="jaxrs" type="b2602c69:ProjectViewProjectNode" />
               <item name="jaxrs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lithualien" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jaxrs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jaxrs" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -326,9 +334,10 @@
   </component>
   <component name="RunManager" selected="GlassFish Server.GlassFish 5.0.0">
     <configuration name="GlassFish 5.0.0" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.0" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/jax-rs/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="jaxrs:war">
+        <artifact name="jax-rs:war">
           <settings />
         </artifact>
       </deployment>
@@ -392,7 +401,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="jaxrs:war" />
+          <artifact name="jax-rs:war" />
         </option>
       </method>
     </configuration>
@@ -457,6 +466,9 @@
       <workItem from="1557737628534" duration="596000" />
       <workItem from="1557771603594" duration="1340000" />
       <workItem from="1557928481948" duration="19405000" />
+      <workItem from="1557989143763" duration="3537000" />
+      <workItem from="1558039119266" duration="180000" />
+      <workItem from="1558254068279" duration="256000" />
     </task>
     <servers />
   </component>
@@ -484,7 +496,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64333000" />
+    <option name="totallyTimeSpent" value="68306000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -496,20 +508,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="349" y="60" width="1319" height="927" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25258142" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Web" order="6" sideWeight="0.5026178" side_tool="true" weight="0.24432677" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.4973822" visible="true" weight="0.25189108" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38539043" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38486314" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -581,56 +593,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/RestServices/src/main/java/eif/viko/lt/s032636/studentai/Studentas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1275">
-          <folding>
-            <element signature="e#0#2568#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/RestServices/src/main/java/eif/viko/lt/s032636/ServiceDAO/jersey/JAXDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="45" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#926#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/RestServices/src/main/java/eif/viko/lt/s032636/FakultetasDAO/DAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="114" column="45" selection-start-line="114" selection-start-column="45" selection-end-line="114" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#4356#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/RestServices/src/main/java/eif/viko/lt/s032636/ServiceDAO/jersey/JAXDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1819">
-          <caret line="126" column="40" selection-start-line="126" selection-start-column="40" selection-end-line="126" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#3394#0" expanded="true" />
-            <element signature="e#1016#1017#0" expanded="true" />
-            <element signature="e#1063#1064#0" expanded="true" />
-            <element signature="e#1260#1261#0" expanded="true" />
-            <element signature="e#1309#1310#0" expanded="true" />
-            <element signature="e#1590#1591#0" expanded="true" />
-            <element signature="e#1639#1640#0" expanded="true" />
-            <element signature="e#1927#1928#0" expanded="true" />
-            <element signature="e#1976#1977#0" expanded="true" />
-            <element signature="e#3331#3332#0" expanded="true" />
-            <element signature="e#3385#3386#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../RestServices/src/main/java/eif/viko/lt/s032636/studentai/Studentas.java" />
+    <entry file="file://$PROJECT_DIR$/../RestServices/src/main/java/eif/viko/lt/s032636/ServiceDAO/jersey/JAXDAO.java" />
+    <entry file="file://$PROJECT_DIR$/../RestServices/src/main/java/eif/viko/lt/s032636/FakultetasDAO/DAOImpl.java" />
+    <entry file="file://$PROJECT_DIR$/../RestServices/src/main/java/eif/viko/lt/s032636/ServiceDAO/jersey/JAXDAOImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/github/lithualien/dao/DaoImplTest.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.9.8/jackson-module-jaxb-annotations-2.9.8.jar!/com/fasterxml/jackson/module/jaxb/JaxbAnnotationIntrospector.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -643,13 +609,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/RestApplication.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="42" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
@@ -667,59 +626,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/bike/Bike.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/shop/Shop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="36" column="79" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="79" />
-          <folding>
-            <element signature="e#2867#2868#0" expanded="true" />
-            <element signature="e#2903#2904#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1530">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/ws/BikeService.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/bike/Bike.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
-          <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/ws/ShopService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="55" column="43" lean-forward="true" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getBikesByColour#0;class#ShopService#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/shop/Shop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="114" column="1" lean-forward="true" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/Dao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="76" column="7" lean-forward="true" selection-start-line="76" selection-start-column="7" selection-end-line="76" selection-end-column="7" />
+          <caret line="36" column="79" selection-start-line="36" selection-start-column="79" selection-end-line="36" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/DaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138">
-          <caret line="245" lean-forward="true" selection-start-line="245" selection-end-line="245" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="3536">
+          <caret line="217" selection-start-line="217" selection-end-line="217" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/Dao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/ws/ShopService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -729,11 +681,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>jaxrs:war</last-edited>
+          <last-edited>jax-rs:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.25862068" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

@@ -98,7 +98,7 @@ public class DaoImpl implements Dao {
 
     public List<Bike> getBike(int id) {
         try {
-            PreparedStatement statement = connection.prepareStatement("SELECT bike.id, bike.name, bike_type.type, bike_colour.colour, bike.weight, bike.gears, bike.wheel_size, bike.price\n" +
+            PreparedStatement statement = connection.prepareStatement("SELECT bike.id, bike.name, bike_type.type, bike_colour.colour, bike.weight, bike.gears, bike.wheel_size, bike.price, bike.shop_id\n" +
                     "FROM ((shop.bike\n" +
                     "INNER JOIN shop.bike_type ON bike.type_id = bike_type.id)\n" +
                     "INNER JOIN shop.bike_colour ON bike.colour_id = bike_colour.id)\n" +

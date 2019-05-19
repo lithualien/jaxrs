@@ -52,7 +52,7 @@ public class ShopService {
     @DELETE
     @Path("/{id}")
     public Response deleteShop(@PathParam("id") int id) {
-        return Response.status(204)
+        return Response.ok()
                 .entity(dao.deleteShop(id))
                 .build();
     }
