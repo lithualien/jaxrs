@@ -82,4 +82,22 @@ public interface Dao {
 
     boolean deleteBike(int id);
 
+    /**
+     * Method to update the selected bike.
+     * @param id the id of the bike.
+     * @param bike the updated bike object.
+     * @return the bike object of update bike.
+     */
+
+    Bike updateBike(int id, Bike bike);
+
+    /**
+     * Method to update the selected shop.
+     * @param id the id of the shop.
+     * @param shop the updated shop object.
+     * @return the ahop object of update shop.
+     */
+
+    Shop updateShop(int id, Shop shop);
+
 }

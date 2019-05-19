@@ -1,7 +1,6 @@
 package com.github.lithualien.dao;
 
 import com.github.lithualien.bike.Bike;
-import com.github.lithualien.dao.Dao;
 import com.github.lithualien.shop.Shop;
 
 import javax.naming.InitialContext;
@@ -102,7 +101,8 @@ public class DaoImpl implements Dao {
                     "FROM ((shop.bike\n" +
                     "INNER JOIN shop.bike_type ON bike.type_id = bike_type.id)\n" +
                     "INNER JOIN shop.bike_colour ON bike.colour_id = bike_colour.id)\n" +
-                    "WHERE bike.id = "+id+";");
+                    "WHERE bike.id = ?;");
+            statement.setInt(1, id);
             result = statement.executeQuery();
             addDataToBikeList();
         }
@@ -166,7 +166,8 @@ public class DaoImpl implements Dao {
 
     public List<Shop> getShop(int id) {
         try {
-            PreparedStatement statement = connection.prepareStatement("SELECT shop.id, shop.name, shop.address, shop.number FROM shop.shop WHERE shop.id = "+id+";");
+            PreparedStatement statement = connection.prepareStatement("SELECT shop.id, shop.name, shop.address, shop.number FROM shop.shop WHERE shop.id = ?;");
+            statement.setInt(1, id);
             result = statement.executeQuery();
             addDataToShopList();
         }
@@ -199,22 +200,11 @@ public class DaoImpl implements Dao {
      */
 
     public Bike addBike(Bike bike) {
-        PreparedStatement statement, temp;
+        PreparedStatement statement;
         try {
             statement = connection.prepareStatement("INSERT INTO shop.bike (name, type_id, colour_id, weight, gears, wheel_size, price, shop_id) \n" +
                     "VALUES(?, ?, ?, ?, ?, ?, ?, ?);");
-            statement.setString(1, bike.getBrand());
-            temp = connection.prepareStatement("SELECT bike_type.id FROM shop.bike_type WHERE bike_type.type = '"+ bike.getType() +"';");
-            result = temp.executeQuery();
-            statement.setInt(2,  getIndex());
-            temp = connection.prepareStatement("SELECT bike_colour.id FROM shop.bike_colour WHERE bike_colour.colour = '"+ bike.getColour() +"';");
-            result = temp.executeQuery();
-            statement.setInt(3,  getIndex());
-            statement.setDouble(4, bike.getWeight());
-            statement.setInt(5, bike.getGears());
-            statement.setDouble(6, bike.getWheelSize());
-            statement.setFloat(7, bike.getPrice());
-            statement.setInt(8, bike.getShopID());
+            executeUpdateBike(bike, statement);
             statement.executeUpdate();
         }
         catch (SQLException e) {
@@ -225,19 +215,16 @@ public class DaoImpl implements Dao {
 
     /**
      * Method to add a new shop.
-     *
      * @param shop Shop class object.
      * @return the information about the new shop.
      */
 
     public Shop addShop(Shop shop) {
-        PreparedStatement statement = null;
+        PreparedStatement statement;
         try {
             statement = connection.prepareStatement("INSERT INTO shop.shop (name, address, number) \n" +
                     "VALUES(?, ?, ?);");
-            statement.setString(1, shop.getName());
-            statement.setString(2, shop.getAddress());
-            statement.setString(3, shop.getNumber());
+            executeUpdateShop(shop, statement);
             statement.executeUpdate();
         }
         catch (SQLException e) {
@@ -249,13 +236,12 @@ public class DaoImpl implements Dao {
 
     /**
      * Method to delete the selected shop.
-     *
      * @param id the id of the shop.
      * @return true or false, depending on success of the operation.
      */
 
     public boolean deleteShop(int id) {
-        PreparedStatement statement = null;
+        PreparedStatement statement;
         try {
             statement = connection.prepareStatement("DELETE FROM shop.shop WHERE id = ?;");
             statement.setInt(1, id);
@@ -270,7 +256,6 @@ public class DaoImpl implements Dao {
 
     /**
      * Method to delete the selected bike.
-     *
      * @param id the id of the bike.
      * @return true or false, depending on success of the operation.
      */
@@ -286,5 +271,73 @@ public class DaoImpl implements Dao {
             e.printStackTrace();
         }
         return false;
+    }
+
+    /**
+     * Method to update the selected bike.
+     * @param id   the id of the bike.
+     * @param bike the updated bike object.
+     * @return the bike object of update bike.
+     */
+
+    public Bike updateBike(int id, Bike bike) {
+        PreparedStatement statement;
+        try {
+            statement = connection.prepareStatement("UPDATE shop.bike SET name = ?, type_id = ?, colour_id = ?, weight = ?, gears = ?, wheel_size = ?, price = ?, shop_id = ? " +
+                    "WHERE bike.id = ?;");
+            executeUpdateBike(bike, statement);
+            statement.setInt(9, id);
+            statement.executeUpdate();
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return bike;
+    }
+
+    private void executeUpdateBike(Bike bike, PreparedStatement statement) throws SQLException {
+        PreparedStatement temp;
+        statement.setString(1, bike.getBrand());
+        temp = connection.prepareStatement("SELECT bike_type.id FROM shop.bike_type WHERE bike_type.type = ?;");
+        temp.setString(1, bike.getType());
+        result = temp.executeQuery();
+        statement.setInt(2,  getIndex());
+        temp = connection.prepareStatement("SELECT bike_colour.id FROM shop.bike_colour WHERE bike_colour.colour = ?;");
+        temp.setString(1, bike.getColour());
+        result = temp.executeQuery();
+        statement.setInt(3,  getIndex());
+        statement.setDouble(4, bike.getWeight());
+        statement.setInt(5, bike.getGears());
+        statement.setDouble(6, bike.getWheelSize());
+        statement.setFloat(7, bike.getPrice());
+        statement.setInt(8, bike.getShopID());
+    }
+
+    /**
+     * Method to update the selected shop.
+     * @param id   the id of the shop.
+     * @param shop the updated shop object.
+     * @return the shop object of update shop.
+     */
+
+    public Shop updateShop(int id, Shop shop) {
+        PreparedStatement statement;
+        try {
+            statement = connection.prepareStatement("UPDATE shop.shop SET name = ?, address = ?, number = ?" +
+                    "WHERE shop.id = ?");
+            executeUpdateShop(shop, statement);
+            statement.setInt(4, id);
+            statement.executeUpdate();
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return shop;
+    }
+
+    public void executeUpdateShop(Shop shop, PreparedStatement statement) throws SQLException {
+        statement.setString(1, shop.getName());
+        statement.setString(2, shop.getAddress());
+        statement.setString(3, shop.getNumber());
     }
 }

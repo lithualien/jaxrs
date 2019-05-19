@@ -57,4 +57,14 @@ public class ShopService {
                 .build();
     }
 
+    @PUT
+    @Path("/{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response updateShop(@PathParam("id") int id, Shop shop) {
+        return Response.ok()
+                .entity(dao.updateShop(id, shop))
+                .build();
+    }
+
 }

@@ -37,4 +37,22 @@ public class BikeService {
                 .build();
     }
 
+    @DELETE
+    @Path("/{id}")
+    public Response deleteBike(@PathParam("id") int id) {
+        return Response.ok()
+                .entity(dao.deleteBike(id))
+                .build();
+    }
+
+    @PUT
+    @Path("/{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response updateBike(@PathParam("id") int id, Bike bike) {
+        return Response.ok()
+                .entity(dao.updateBike(id, bike))
+                .build();
+    }
+
 }

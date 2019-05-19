@@ -6,15 +6,19 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="511693f8-84fe-495d-827b-92764f82c222" name="Default Changelist" comment="">
+    <list default="true" id="b6504555-8e30-42a4-98de-8a430222cf08" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/Dao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/DaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/DaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lithualien/ws/BikeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lithualien/ws/BikeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lithualien/ws/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lithualien/ws/ShopService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/jax-rs.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/jaxrs.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jax-rs/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/jax-rs/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jax-rs/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/jax-rs/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/jaxrs.kotlin_module" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,57 +28,17 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/ws/BikeService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/bike/Bike.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="79" selection-start-line="36" selection-start-column="79" selection-end-line="36" selection-end-column="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/DaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3536">
-              <caret line="217" selection-start-line="217" selection-end-line="217" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+            <state relative-caret-position="259">
+              <caret line="53" column="38" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -82,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/Dao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
+            <state relative-caret-position="472">
+              <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
             </state>
           </provider>
         </entry>
@@ -91,27 +55,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/ws/ShopService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+            <state relative-caret-position="361">
+              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/DaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="727">
+              <caret line="279" column="46" lean-forward="true" selection-start-line="279" selection-start-column="46" selection-end-line="279" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/bike/Bike.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="Arquillian JUnit Test Class" />
-        <option value="JUnit4 Test Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>BikeDao</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -119,23 +90,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/github/lithualien/RestApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/ShopDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/ShopDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/lithualien/ws/BikeServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/BikeDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/BikeDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/lithualien/dao/DaoImplTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/lithualien/ws/BikeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/lithualien/bike/Bike.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/lithualien/shop/Shop.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/lithualien/DaoImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/lithualien/DaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/Dao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/DaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/lithualien/ws/ShopService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/DaoImpl.java" />
       </list>
     </option>
   </component>
@@ -150,66 +108,50 @@
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
+        <option name="jdkForImporter" value="1.8 (2)" />
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="jax-rs Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="jax-rs Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="176" />
-    <option name="y" value="2" />
-    <option name="width" value="1319" />
-    <option name="height" value="788" />
-  </component>
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="381" />
+    <option name="y" value="18" />
+    <option name="width" value="1239" />
+    <option name="height" value="870" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="jaxrs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jax-rs" type="b2602c69:ProjectViewProjectNode" />
               <item name="jaxrs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="jaxrs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jax-rs" type="b2602c69:ProjectViewProjectNode" />
               <item name="jaxrs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="jaxrs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jax-rs" type="b2602c69:ProjectViewProjectNode" />
               <item name="jaxrs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="jaxrs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jax-rs" type="b2602c69:ProjectViewProjectNode" />
               <item name="jaxrs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="jaxrs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jax-rs" type="b2602c69:ProjectViewProjectNode" />
               <item name="jaxrs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -217,7 +159,16 @@
               <item name="lithualien" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="jaxrs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jax-rs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jaxrs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lithualien" type="462c0819:PsiDirectoryNode" />
+              <item name="bike" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jax-rs" type="b2602c69:ProjectViewProjectNode" />
               <item name="jaxrs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -226,7 +177,7 @@
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="jaxrs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jax-rs" type="b2602c69:ProjectViewProjectNode" />
               <item name="jaxrs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -235,7 +186,7 @@
               <item name="shop" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="jaxrs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jax-rs" type="b2602c69:ProjectViewProjectNode" />
               <item name="jaxrs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -244,81 +195,50 @@
               <item name="ws" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="jaxrs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jax-rs" type="b2602c69:ProjectViewProjectNode" />
               <item name="jaxrs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="jaxrs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jaxrs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jaxrs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jax-rs" type="b2602c69:ProjectViewProjectNode" />
               <item name="jaxrs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="jaxrs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jax-rs" type="b2602c69:ProjectViewProjectNode" />
               <item name="jaxrs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="jaxrs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jax-rs" type="b2602c69:ProjectViewProjectNode" />
               <item name="jaxrs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lithualien" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="jaxrs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jaxrs" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.25862068" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.github.lithualien" />
-      <recent name="com.github.lithualien.dao" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -332,7 +252,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="GlassFish Server.GlassFish 5.0.0">
+  <component name="RunManager">
     <configuration name="GlassFish 5.0.0" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.0" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/jax-rs/" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -405,273 +325,104 @@
         </option>
       </method>
     </configuration>
-    <configuration name="DaoImplTest.addBike" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jaxrs" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.lithualien.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.github.lithualien" />
-      <option name="MAIN_CLASS_NAME" value="com.github.lithualien.DaoImplTest" />
-      <option name="METHOD_NAME" value="addBike" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DaoImplTest.getBikesByColour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jaxrs" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.lithualien.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.github.lithualien.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.github.lithualien.dao.DaoImplTest" />
-      <option name="METHOD_NAME" value="getBikesByColour" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="GlassFish Server.GlassFish 5.0.0" />
-      <item itemvalue="JUnit.DaoImplTest.getBikesByColour" />
-      <item itemvalue="JUnit.DaoImplTest.addBike" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.DaoImplTest.addBike" />
-        <item itemvalue="JUnit.DaoImplTest.getBikesByColour" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="511693f8-84fe-495d-827b-92764f82c222" name="Default Changelist" comment="" />
-      <created>1557320574630</created>
+      <changelist id="b6504555-8e30-42a4-98de-8a430222cf08" name="Default Changelist" comment="" />
+      <created>1558254743919</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1557320574630</updated>
-      <workItem from="1557320577101" duration="18772000" />
-      <workItem from="1557344020888" duration="16138000" />
-      <workItem from="1557399296010" duration="417000" />
-      <workItem from="1557399989197" duration="7665000" />
-      <workItem from="1557737628534" duration="596000" />
-      <workItem from="1557771603594" duration="1340000" />
-      <workItem from="1557928481948" duration="19405000" />
-      <workItem from="1557989143763" duration="3537000" />
-      <workItem from="1558039119266" duration="180000" />
-      <workItem from="1558254068279" duration="256000" />
+      <updated>1558254743919</updated>
+      <workItem from="1558254748383" duration="10355000" />
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="DaoImplTest_getBikesByColour - 2019.05.09 at 01h 52m 46s.xml">
-      <configuration name="DaoImplTest.getBikesByColour" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DaoImplTest_getBikesByColour - 2019.05.09 at 01h 52m 57s.xml">
-      <configuration name="DaoImplTest.getBikesByColour" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DaoImplTest_getBikesByColour - 2019.05.09 at 01h 53m 30s.xml">
-      <configuration name="DaoImplTest.getBikesByColour" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DaoImplTest_getBikesByColour - 2019.05.09 at 01h 53m 38s.xml">
-      <configuration name="DaoImplTest.getBikesByColour" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DaoImplTest_addBike - 2019.05.15 at 22h 11m 16s.xml">
-      <configuration name="DaoImplTest.addBike" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DaoImplTest_addBike - 2019.05.15 at 22h 15m 57s.xml">
-      <configuration name="DaoImplTest.addBike" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DaoImplTest_addBike - 2019.05.15 at 22h 16m 26s.xml">
-      <configuration name="DaoImplTest.addBike" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68306000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="10355000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="381" y="18" width="1239" height="870" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="1" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Web" order="6" sideWeight="0.5026178" side_tool="true" weight="0.24432677" />
-      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.4973822" visible="true" weight="0.25189108" />
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24936387" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Application Servers" weight="0.32882273" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32882273" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32882273" />
+      <window_info anchor="bottom" id="Java Enterprise" weight="0.32882273" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" weight="0.32882273" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38486314" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32971507" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3290461" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32368702" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3290461" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3290461" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="JSF" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="CDI" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Bean Validation" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32995737" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="JSF" order="6" />
-      <window_info anchor="right" id="Database" order="7" weight="0.32995737" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="CDI" order="10" />
-      <window_info anchor="right" id="Bean Validation" order="11" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Designer" order="0" />
-      <window_info id="Image Layers" order="1" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info id="Web" order="5" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.22910216" />
-      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Application Servers" order="0" weight="0.3290461" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="4" weight="0.3290461" />
-      <window_info anchor="bottom" id="Java Enterprise" order="5" />
-      <window_info anchor="bottom" id="Database Changes" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Message" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" />
-      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.33081895" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="14" />
-      <window_info anchor="right" id="Maven" order="0" />
-      <window_info anchor="right" id="Palette" order="1" />
-      <window_info anchor="right" id="JSF" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32995737" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="CDI" order="7" />
-      <window_info anchor="right" id="Bean Validation" order="8" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="9" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="10" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="11" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../RestServices/src/main/java/eif/viko/lt/s032636/studentai/Studentas.java" />
-    <entry file="file://$PROJECT_DIR$/../RestServices/src/main/java/eif/viko/lt/s032636/ServiceDAO/jersey/JAXDAO.java" />
-    <entry file="file://$PROJECT_DIR$/../RestServices/src/main/java/eif/viko/lt/s032636/FakultetasDAO/DAOImpl.java" />
-    <entry file="file://$PROJECT_DIR$/../RestServices/src/main/java/eif/viko/lt/s032636/ServiceDAO/jersey/JAXDAOImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/lithualien/dao/DaoImplTest.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.9.8/jackson-module-jaxb-annotations-2.9.8.jar!/com/fasterxml/jackson/module/jaxb/JaxbAnnotationIntrospector.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/Dao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="727" selection-start-line="727" selection-end-line="727" />
+        <state relative-caret-position="472">
+          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/RestApplication.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/ws/ShopService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="55" column="16" lean-forward="true" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/lithualien/DaoImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="361">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/shop/Shop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/ws/BikeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/bike/Bike.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="79" selection-start-line="36" selection-start-column="79" selection-end-line="36" selection-end-column="79" />
+        <state relative-caret-position="259">
+          <caret line="53" column="38" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/DaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3536">
-          <caret line="217" selection-start-line="217" selection-end-line="217" />
+        <state relative-caret-position="727">
+          <caret line="279" column="46" lean-forward="true" selection-start-line="279" selection-start-column="46" selection-end-line="279" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/dao/Dao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/bike/Bike.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/lithualien/ws/ShopService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        <state relative-caret-position="187">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -685,7 +436,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.25862068" />
+                <option value="0.2" />
                 <option value="0.5" />
               </list>
             </option>
@@ -694,11 +445,11 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web</last-edited>
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.25862068" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
@@ -717,6 +468,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -739,7 +491,7 @@
       </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>1.8 (2)</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
