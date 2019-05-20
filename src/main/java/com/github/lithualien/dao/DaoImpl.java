@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Class to manage the data and transfer it to the
+ * Class to manage the data and transfer it to the database. Using GlassFish 5.0.0 and MySQL.
  * @author Tomas Dominauskas
  */
 
@@ -33,12 +33,12 @@ public class DaoImpl implements Dao {
     }
 
     /**
-     * Method to connect to the database.
+     * Method to connect to the database from GlassFish.
      */
 
     private void connToDB() {
-        InitialContext ctx = null;
-        DataSource ds = null;
+        InitialContext ctx;
+        DataSource ds;
         try {
             ctx = new InitialContext();
             ds = (DataSource)ctx.lookup("jdbc/jax-rs");
@@ -55,15 +55,15 @@ public class DaoImpl implements Dao {
      * @return Returns the Bike object list.
      */
 
-    public List<Bike> getBikes() {
+    public List<Bike> getBikes(int shopID) {
         try {
             PreparedStatement statement = connection.prepareStatement("SELECT bike.id, bike.name, bike_type.type, bike_colour.colour, bike.weight, bike.gears, bike.wheel_size, bike.price, bike.shop_id\n" +
                     "FROM ((shop.bike \n" +
                     "INNER JOIN shop.bike_type ON bike.type_id = bike_type.id) \n" +
-                    "INNER JOIN shop.bike_colour ON bike.colour_id = bike_colour.id);");
-
+                    "INNER JOIN shop.bike_colour ON bike.colour_id = bike_colour.id)" +
+                    "WHERE bike.shop_id = ?;");
+            statement.setInt(1, shopID);
             result = statement.executeQuery();
-
             addDataToBikeList();
         }
         catch (SQLException e) {
@@ -92,7 +92,7 @@ public class DaoImpl implements Dao {
     /**
      * Method to get information about the selected shop.
      * @param id the id of the shop.
-     * @return Shop object.
+     * @return Shop object with information about the shop.
      */
 
     public List<Bike> getBike(int id) {
@@ -151,6 +151,12 @@ public class DaoImpl implements Dao {
         }
     }
 
+    /**
+     * Method to get the index of colour or type id.
+     * @return the index of colour or type.
+     * @throws SQLException
+     */
+
     private int getIndex() throws SQLException {
         while (result.next()) {
             return result.getInt("id");
@@ -204,7 +210,7 @@ public class DaoImpl implements Dao {
         try {
             statement = connection.prepareStatement("INSERT INTO shop.bike (name, type_id, colour_id, weight, gears, wheel_size, price, shop_id) \n" +
                     "VALUES(?, ?, ?, ?, ?, ?, ?, ?);");
-            executeUpdateBike(bike, statement);
+            setBikeStatement(bike, statement);
             statement.executeUpdate();
         }
         catch (SQLException e) {
@@ -224,7 +230,7 @@ public class DaoImpl implements Dao {
         try {
             statement = connection.prepareStatement("INSERT INTO shop.shop (name, address, number) \n" +
                     "VALUES(?, ?, ?);");
-            executeUpdateShop(shop, statement);
+            setShopStatement(shop, statement);
             statement.executeUpdate();
         }
         catch (SQLException e) {
@@ -285,7 +291,7 @@ public class DaoImpl implements Dao {
         try {
             statement = connection.prepareStatement("UPDATE shop.bike SET name = ?, type_id = ?, colour_id = ?, weight = ?, gears = ?, wheel_size = ?, price = ?, shop_id = ? " +
                     "WHERE bike.id = ?;");
-            executeUpdateBike(bike, statement);
+            setBikeStatement(bike, statement);
             statement.setInt(9, id);
             statement.executeUpdate();
         }
@@ -295,7 +301,14 @@ public class DaoImpl implements Dao {
         return bike;
     }
 
-    private void executeUpdateBike(Bike bike, PreparedStatement statement) throws SQLException {
+    /**
+     * Method to prepare all data, of bike, to be executed to the database.
+     * @param bike the bike object to be updated.
+     * @param statement the bike statement to be prepared for execution.
+     * @throws SQLException
+     */
+
+    private void setBikeStatement(Bike bike, PreparedStatement statement) throws SQLException {
         PreparedStatement temp;
         statement.setString(1, bike.getBrand());
         temp = connection.prepareStatement("SELECT bike_type.id FROM shop.bike_type WHERE bike_type.type = ?;");
@@ -325,7 +338,7 @@ public class DaoImpl implements Dao {
         try {
             statement = connection.prepareStatement("UPDATE shop.shop SET name = ?, address = ?, number = ?" +
                     "WHERE shop.id = ?");
-            executeUpdateShop(shop, statement);
+            setShopStatement(shop, statement);
             statement.setInt(4, id);
             statement.executeUpdate();
         }
@@ -335,7 +348,14 @@ public class DaoImpl implements Dao {
         return shop;
     }
 
-    public void executeUpdateShop(Shop shop, PreparedStatement statement) throws SQLException {
+    /**
+     * Method  to prepare all data, of shop, to be executed to the database.
+     * @param shop the shop object to be updated.
+     * @param statement the shop statement to be prepared for execution.
+     * @throws SQLException
+     */
+
+    private void setShopStatement(Shop shop, PreparedStatement statement) throws SQLException {
         statement.setString(1, shop.getName());
         statement.setString(2, shop.getAddress());
         statement.setString(3, shop.getNumber());

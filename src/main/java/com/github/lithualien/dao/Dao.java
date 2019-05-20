@@ -16,7 +16,7 @@ public interface Dao {
      * @return the Bike object list of all bike.
      */
 
-    List<Bike> getBikes();
+    List<Bike> getBikes(int shopID);
 
     /**
      * Method to get all shops.
@@ -95,7 +95,7 @@ public interface Dao {
      * Method to update the selected shop.
      * @param id the id of the shop.
      * @param shop the updated shop object.
-     * @return the ahop object of update shop.
+     * @return the shop object of update shop.
      */
 
     Shop updateShop(int id, Shop shop);

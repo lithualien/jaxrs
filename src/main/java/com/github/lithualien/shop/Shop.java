@@ -1,7 +1,5 @@
 package com.github.lithualien.shop;
 
-import com.github.lithualien.bike.Bike;
-
 /**
  * Class to define information about the shop.
  */
@@ -110,6 +108,6 @@ public class Shop {
      */
 
     public String toString() {
-        return "id : " + ID + "\nname : " + name + "\naddress : " + address + "\nnumber : " + number +"\n";
+        return "ID: " + ID + "\nname : " + name + "\naddress: " + address + "\nnumber: " + number +"\n";
     }
 }
