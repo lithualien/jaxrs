@@ -272,6 +272,7 @@ public class DaoImpl implements Dao {
             statement = connection.prepareStatement("DELETE FROM shop.bike WHERE id = ?;");
             statement.setInt(1, id);
             statement.executeUpdate();
+            return true;
         }
         catch (SQLException e) {
             e.printStackTrace();

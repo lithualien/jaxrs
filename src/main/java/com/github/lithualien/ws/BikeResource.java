@@ -22,7 +22,7 @@ public class BikeResource {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getBikes(@MatrixParam("shopID") int shopID) {
+    public Response getBikes(@PathParam("shopID") int shopID) {
         return Response.ok()
                 .entity(dao.getBikes(shopID))
                 .build();
